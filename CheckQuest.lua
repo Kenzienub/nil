@@ -626,5 +626,3 @@ function CheckLevel()
     end
     end
 end
-
-CheckLevel()
