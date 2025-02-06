@@ -11,7 +11,7 @@ function CheckLevel()
     if First_Sea then
     if Lv == 1 or Lv <= 9 or SelectMonster == "Bandit" or SelectArea == '' then -- Bandit 
     _G.Ms = "Bandit"
-    _G.NameQuest = "BanditQuest"
+    _G.NameQuest = "BanditQuest1"
     _G.QuestLv = 1
     _G.NameMon = "Bandit"
     _G.CFrameQ = CFrame.new(1060.9383544922, 16.455066680908, 1547.7841796875)
