@@ -1,7 +1,14 @@
 ---@diagnostic disable: undefined-global, lowercase-global, unused-function, unused-local, empty-block, unbalanced-assignments, deprecated, undefined-field
-
 local id = game.PlaceId
-if id == 2753915549 then First_Sea = true; elseif id == 4442272183 then Second_Sea = true; elseif id == 7449423635 then Third_Sea = true; else game:Shutdown() end;
+if id == 2753915549 then 
+    _G.First_Sea = true;
+elseif id == 4442272183 then
+    _G.Second_Sea = true;
+elseif id == 7449423635 then 
+    _G.Third_Sea = true;
+else 
+    lp:Kick("UnKnown Game. Discord: dsc.gg/xDevil")
+end
 
 local lp = game.Players.LocalPlayer;
 
