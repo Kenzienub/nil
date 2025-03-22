@@ -621,7 +621,7 @@ function CheckLevel()
     _G.NameMon = "Isle Champion"
     _G.CFrameQ = CFrame.new(-16542.447265625, 55.68632888793945, 1044.41650390625)
     _G.CFrameMon = CFrame.new(-16848.94140625, 21.68633460998535, 1041.4490966796875)
-     elseif Lv == 2550 or Lv <= 2574 or _G.SelectMonster == "Serpent Hunter [Lv. 2550]" then
+     elseif Lv => 2550 or Lv <= 2574 or _G.SelectMonster == "Serpent Hunter [Lv. 2550]" then
     _G.Ms = "Serpent Hunter"
     _G.NameQuest = "TikiQuest3"
     _G.QuestLv = 1
