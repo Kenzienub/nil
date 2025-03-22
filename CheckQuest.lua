@@ -621,14 +621,14 @@ function CheckLevel()
     _G.NameMon = "Isle Champion"
     _G.CFrameQ = CFrame.new(-16542.447265625, 55.68632888793945, 1044.41650390625)
     _G.CFrameMon = CFrame.new(-16848.94140625, 21.68633460998535, 1041.4490966796875)
-     elseif Lv => 2550 or Lv <= 2574 or _G.SelectMonster == "Serpent Hunter [Lv. 2550]" then
+     elseif Lv => 2550 or Lv <= 2574 or _G.SelectMonster == "Serpent Hunter" then
     _G.Ms = "Serpent Hunter"
     _G.NameQuest = "TikiQuest3"
     _G.QuestLv = 1
     _G.NameMon = "Serpent Hunter"
     _G.CFrameQ = CFrame.new(-16665.1914, 104.596405, 1579.69434, 0.951068401, -0, -0.308980465, 0, 1, -0, 0.308980465, 0, 0.951068401)
     _G.CFrameMon = CFrame.new(-16654.7754, 105.286232, 1579.67444, 0.999096751, 4.45934489e-08, 0.0424928814, -4.38822667e-08, 1, -1.76692847e-08, -0.0424928814, 1.57886415e-08, 0.999096751)
-    elseif Lv >= 2575 or _G.SelectMonster == "Skull Slayer [Lv. 2575]" then
+    elseif Lv >= 2575 or _G.SelectMonster == "Skull Slayer" then
     _G.Ms = "Skull Slayer"
     _G.NameQuest = "TikiQuest3"
     _G.QuestLv = 2
