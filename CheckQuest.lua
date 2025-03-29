@@ -153,7 +153,7 @@ function CheckLevel()
     if _G.Autolevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 6000 then
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
     end
-    elseif Lv == 10 or Lv <= 474 or _G.SelectMonster == "God's Guard" or SelectArea == 'Sky Island' then -- God's Guard
+    elseif Lv == 450 or Lv <= 474 or _G.SelectMonster == "God's Guard" or SelectArea == 'Sky Island' then -- God's Guard
     _G.Ms = "God's Guard"
     _G.NameQuest = "SkyExp1Quest"
     _G.QuestLv = 1
