@@ -170,8 +170,8 @@ function CheckLevel()
     _G.NameMon = "Shanda"
     _G.CFrameQ = CFrame.new(-7863.1596679688, 5545.5190429688, -378.42266845703)
     _G.CFrameMon = CFrame.new(-7685.1474609375, 5601.0751953125, -441.38876342773)
-    if _G.Autolevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 6000 then
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-7894.6176757813, 5547.1416015625, -380.29119873047))
+    if _G.AutoLevel and(_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then
+       game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-7894.6176757813, 5547.1416015625, -380.29119873047))
     end
     elseif Lv == 525 or Lv <= 549 or _G.SelectMonster == "Royal Squad" or SelectArea == 'Sky Island' then -- Royal Squad
     _G.Ms = "Royal Squad"
