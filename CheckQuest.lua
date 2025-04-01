@@ -239,7 +239,7 @@ function CheckLevel()
     _G.NameMon = "Marine Lieutenant"
     _G.CFrameQ = CFrame.new(-2440.9934082031, 73.04190826416, -3217.7082519531)
     _G.CFrameMon = CFrame.new(-2489.2622070313, 84.613594055176, -3151.8830566406)
-    elseif Lv == 900 or Lv <= 949 or _G.SelectMonster == "Marine Captain" or SelectArea == 'Marine' then -- Marine Captain
+    elseif Lv == 900 or Lv <= 949 or _G.SelectMonster == "Marine Captain" or SelectArea == 'Marine' then -- Marine Captains
     _G.Ms = "Marine Captain"
     _G.NameQuest = "MarineQuest3"
     _G.QuestLv = 2
