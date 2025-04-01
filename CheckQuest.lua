@@ -140,8 +140,8 @@ function CheckLevel()
     _G.NameMon = "Fishman Warrior"
     _G.CFrameQ = CFrame.new(61122.65234375, 18.497442245483, 1569.3997802734)
     _G.CFrameMon = CFrame.new(60844.10546875, 98.462875366211, 1298.3985595703)
-     if _G.Autolevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude < 1200 then
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163, 11, 1819))
+    if _G.Autolevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then
+        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
     end
     elseif Lv == 400 or Lv <= 449 or _G.SelectMonster == "Fishman Commando" or SelectArea == 'Fishman' then -- Fishman Commando
     _G.Ms = "Fishman Commando"
