@@ -312,7 +312,7 @@ function CheckLevel()
     if _G.Autolevel and _G.CFrameMon and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
         local distance = (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
         print("Distance:", distance)
-        if distance > 20000 then
+        if distance > 3000 then
             game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-6508.558, 89.035, -132.84))
         end
     end
