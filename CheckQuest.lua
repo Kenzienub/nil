@@ -309,8 +309,12 @@ function CheckLevel()
     _G.NameMon = "Ship Deckhand"
     _G.CFrameQ = CFrame.new(1040.2927246094, 125.08293151855, 32911.0390625)
     _G.CFrameMon = CFrame.new(921.12365722656, 125.9839553833, 33088.328125)
-    if _G.Autolevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 20000 then
-        game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
+    if _G.Autolevel and _G.CFrameMon and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:FindFirstChild("HumanoidRootPart") then
+        local distance = (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude
+        print("Distance:", distance)
+        if distance > 20000 then
+            game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance", Vector3.new(-6508.558, 89.035, -132.84))
+        end
     end
     elseif Lv == 1275 or Lv <= 1299 or _G.SelectMonster == "Ship Engineer" or SelectArea == 'Ship' then -- Ship Engineer
     _G.Ms = "Ship Engineer"
