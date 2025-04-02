@@ -309,7 +309,7 @@ function CheckLevel()
     _G.NameMon = "Ship Deckhand"
     _G.CFrameQ = CFrame.new(1040.2927246094, 125.08293151855, 32911.0390625)
     _G.CFrameMon = CFrame.new(921.12365722656, 125.9839553833, 33088.328125)
-    if _G.Autolevel and (Vector3.new(921.12365722656, 125.9839553833, 33088.328125) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then
+    if _G.Autolevel and (Vector3.new(921, 125, 33088) - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude >= 1000 then
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
     else
         print("nope")
