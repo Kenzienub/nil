@@ -140,7 +140,7 @@ function CheckLevel()
     _G.NameMon = "Fishman Warrior"
     _G.CFrameQ = CFrame.new(61122.65234375, 18.497442245483, 1569.3997802734)
     _G.CFrameMon = CFrame.new(60844.10546875, 98.462875366211, 1298.3985595703)
-    if _G.Autolevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude then
+    if _G.AutoLevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163, 50, 1819))
     end
     elseif Lv == 400 or Lv <= 449 or _G.SelectMonster == "Fishman Commando" or SelectArea == 'Fishman' then -- Fishman Commando
@@ -150,7 +150,7 @@ function CheckLevel()
     _G.NameMon = "Fishman Commando"
     _G.CFrameQ = CFrame.new(61122.65234375, 18.497442245483, 1569.3997802734)
     _G.CFrameMon = CFrame.new(61738.3984375, 64.207321166992, 1433.8375244141)
-    if _G.Autolevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then
+    if _G.AutoLevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 3000 then
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(61163.8515625, 11.6796875, 1819.7841796875))
     end
     elseif Lv == 450 or Lv <= 474 or _G.SelectMonster == "God's Guard" or SelectArea == 'Sky Island' then -- God's Guard
@@ -309,7 +309,7 @@ function CheckLevel()
     _G.NameMon = "Ship Deckhand"
     _G.CFrameQ = CFrame.new(1040.2927246094, 125.08293151855, 32911.0390625)
     _G.CFrameMon = CFrame.new(921.12365722656, 125.9839553833, 33088.328125)
-    if _G.Autolevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 20000 then
+    if _G.AutoLevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 20000 then
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
     end
     elseif Lv == 1275 or Lv <= 1299 or _G.SelectMonster == "Ship Engineer" or SelectArea == 'Ship' then -- Ship Engineer
@@ -319,7 +319,7 @@ function CheckLevel()
     _G.NameMon = "Ship Engineer"
     _G.CFrameQ = CFrame.new(1040.2927246094, 125.08293151855, 32911.0390625)
     _G.CFrameMon = CFrame.new(886.28179931641, 40.47790145874, 32800.83203125)
-    if _G.Autolevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 20000 then
+    if _G.AutoLevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 20000 then
         game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
     end
     elseif Lv == 1300 or Lv <= 1324 or _G.SelectMonster == "Ship Steward" or SelectArea == 'Ship' then -- Ship Steward
@@ -339,7 +339,7 @@ function CheckLevel()
     _G.NameMon = "Ship Officer"
     _G.CFrameQ = CFrame.new(971.42065429688, 125.08293151855, 33245.54296875)
     _G.CFrameMon = CFrame.new(955.38458251953, 181.08335876465, 33331.890625)
-    if _G.Autolevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 20000 then
+    if _G.AutoLevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 20000 then
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(923.21252441406, 126.9760055542, 32852.83203125))
     end
     elseif Lv == 1350 or Lv <= 1374 or _G.SelectMonster == "Arctic Warrior" or SelectArea == 'Frost' then -- Arctic Warrior
@@ -349,7 +349,7 @@ function CheckLevel()
     _G.NameMon = "Arctic Warrior"
     _G.CFrameQ = CFrame.new(5668.1372070313, 28.202531814575, -6484.6005859375)
     _G.CFrameMon = CFrame.new(5935.4541015625, 77.26016998291, -6472.7568359375)
-    if _G.Autolevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 20000 then
+    if _G.AutoLevel and (_G.CFrameMon.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude > 20000 then
     game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("requestEntrance",Vector3.new(-6508.5581054688, 89.034996032715, -132.83953857422))
     end
     elseif Lv == 1375 or Lv <= 1424 or _G.SelectMonster == "Snow Lurker" or SelectArea == 'Frost' then -- Snow Lurker
